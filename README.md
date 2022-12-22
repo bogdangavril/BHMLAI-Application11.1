@@ -1,6 +1,6 @@
 # BHMLAI Practical Application 11.1
 
-The link to the notebook: 
+The link to the notebook: https://github.com/bogdangavril/BHMLAI-Application11_1.git
 
 The conclusions of this practical application.
 
