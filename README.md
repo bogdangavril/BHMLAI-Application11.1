@@ -1,20 +1,40 @@
-# BHMLAI Practical Application 5.1
-The conclusions of this practical application
-Focus are the bar coupons
-  1. The data set had a number of missing values; the "car" column had to be removed since it contained only a few entries
-  2. The other missing values have been replaced by values suggested by related visualizations
-  3. Almost 57% of the drivers accepted coupons
-  4. Coupon acceptance for cheap restaurants and carry out/take away food was more than double than non acceptance
-  5. Coupons for coffee houses were about equally accepted and refused
-  6. More drivers refused coupons for bars and more expensive restaurants
-  7. Most of the drivers accepting the bar coupon are the ones going to a bar less 3 times a month
-  8. The rate of acceptance is higher in the group of drivers going less than once a month and of any age then the acceptance rate in the group of drivers who are older than 25 years and go to bars more than one in a month
-  9. The drivers who go to a bar less than once a month, have no kid passenger, have occupation other than farming, fishing, forestry, are more likely to accept the coupons then not
-  10. The most coupons are accepted by the group which goes to bars more than once a month and are under 30 years old
+# BHMLAI Practical Application 11.1
 
-Independent investigation conclusions
-Focus are the coffee house coupons
-Conslusions:
-  1. In both categories of people earning less than 12.5k and people earning more than 100k the tendency is to refuse to accept the coffee coupon
-  2. Among the graduate educated working in business and financial more accepted the coupon than not.
-  3. As it was expected, it is more likely to accept a coupon going to work at 7AM than returning home at 6PM
+The link to the notebook: 
+
+The conclusions of this practical application.
+
+The declared purpose of this analysis was to determine the features which influence the price of used cars the most. The second purpose was to create a prediction model to be used for predicting the price of the used car using the above features.
+
+The most important features that influence the price of a used car are:
+- age
+- mileage
+- car type,
+- manufacturer
+- type of drive
+- cylinders
+- fuel
+
+The model we created has a score of 0.88 with minimal median absolute error, both of which make the model very solid and recommended for use.
+
+Newer diesel sedan cars, with lower mileage, forward drive and a serious engine / more cylinders sell for most money.
+
+Sedans, SUV's and pickups sell for more money so the inventory must include these.
+
+Toyota, Chevrolet, Ford, Lexus, Jeep and Mercedes should be the top choices for your inventory, especially sedans and SUVs.
+
+The county where the dealership is located matters for the price. Same car sells for more in some counties. We can provide at your request the distribution of average price per county.
+
+Convertibles, mini-vans, wagons are not selling for much.
+
+
+
+Next steps and recommendations:
+
+Try to do separate analysis for each state in part, pay attention to the regions/counties and make a recommendation on which county drives higher sales and price in that state.
+
+The data does not include the acquisition cost for each car, so the profit made is not visible. Even if the car sells for more money due to various combinations of features, the profit can be smaller than for cars that sell for less amounts. A future activity should be collecting the cost or profit per car sold so we can analyze what features influence the profit per car sold.
+
+The inventory dynamics are not captured in the data, such as the time a car stays on the lot, which is an important metric for dealerships. Future activity should be collecting such additional data.
+
+The car model data as is collected now is not very practical for analysis. There are too many variations and too many details in the model. We determined that the initial data set had 29k unique models, and this was because of the way the model was entered. A future activity should be to standardize the model data and move the additional details into separate data to be used as features in analysis.
